@@ -1,0 +1,5 @@
+<app-creater
+  (movieAdded)="onMovieAdded($event)"
+  [movieCount]="movies.length"
+></app-creater>
+<app-movie-card *ngFor="let movie of movies" [movie]="movie"></app-movie-card>

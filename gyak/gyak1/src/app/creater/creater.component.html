@@ -1,0 +1,13 @@
+<div>
+  <label>Title></label>
+  <input type="text" #titleInput />
+  <label>Desc</label>
+  <input type="text" #descInput />
+  <label>Image path</label>
+  <input type="text" #imagPathInput />
+  <label>Rating</label>
+  <input type="number" #ratingInput />
+  <button (click)="addMovie(titleInput, descInput, imagPathInput, ratingInput)">
+    Add
+  </button>
+</div>

@@ -1,0 +1,7 @@
+<hr>
+<button (click)="onClikShow()" class="btn btn-primary">Display Details</button>
+<p *ngIf="show" >Secret Password = tuna</p>
+<h4 *ngFor="let item of items;let i = index"
+    [ngStyle]="{backgroundColor: i >= 5 && 'royalblue' }"
+    [ngClass]="{afterFive: i >= 5}"
+>{{item}} {{i}}</h4>

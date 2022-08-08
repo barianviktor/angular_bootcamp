@@ -1,0 +1,32 @@
+button { 
+     width: 100%; 
+    height: 100%; 
+    font-size: 3em !important;
+    outline: none;
+    transition: all 0.5s ease-out;
+    color: rgb(238, 238, 238); 
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+}
+.notInList{
+    background-color: #2C73D2;
+    border: 2px solid #97d0ff;
+}
+.notInList:hover{
+    background-color: #3483eb;
+    border: 2px solid #4c94f3;
+}
+.notInList:focus{
+    background-color: #1e6ed6;
+    border: 2px solid #5c9ff7;
+}
+.notFoundClass{
+    background-color: #F3C5FF;
+    border: 2px solid #f9e1ff;
+    color: rgb(85, 85, 85);
+}
+.foundClass{
+    background-color: #00C9A7;
+    border: 2px solid #1ff3d0;
+}

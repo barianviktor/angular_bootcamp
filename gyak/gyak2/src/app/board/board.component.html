@@ -1,0 +1,20 @@
+<div class="header">
+  <h1>Memory Game of the century</h1>
+  <input type="number" [(ngModel)]="optionCount" />
+
+  <button (click)="startNewGame()">Start new Game</button>
+</div>
+<div class="gameData">
+  <h3>Turn: {{ turnCounter }}</h3>
+</div>
+
+<main>
+  <app-card
+    (emmiter)="makeMove($event)"
+    *ngFor="let item of items; let i = index"
+    [value]="item"
+    [index]="i"
+    [reveal]="isItRevealed(i)"
+    [found]="isItFound(i)"
+  ></app-card>
+</main>

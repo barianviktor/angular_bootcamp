@@ -1,0 +1,3 @@
+[submodule "angular_bootcamp"]
+	path = angular_bootcamp
+	url = https://github.com/barianviktor/angular_bootcamp.git
