@@ -1,0 +1,33 @@
+<div>
+  <h1>Create your own Beer</h1>
+  <div class="beer_creater_field">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Beer name</mat-label>
+      <input matInput placeholder="Buzz" [(ngModel)]="beer.name" />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Beer Description</mat-label>
+      <textarea style="resize: none; height: 50px;"  matInput placeholder="Tasty Beer" [(ngModel)]="beer.desc" >
+      </textarea>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Image Url</mat-label>
+      <textarea style="resize: none; height: 50px;" matInput [(ngModel)]="beer.img_url" >
+      </textarea>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Brewing tip</mat-label>
+      <textarea style="resize: none; height: 50px;" matInput [(ngModel)]="beer.tips" >
+      </textarea>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Was first brewed</mat-label>
+      <input matInput [(ngModel)]="beer.first_brewed" placeholder="09/2007" />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>ABV</mat-label>
+      <input type="number" matInput [(ngModel)]="beer.abv" min="0" max="100" />
+    </mat-form-field>
+    <button (click)="onCreateBeer()" mat-raised-button color="primary"	>Create Beer</button>
+  </div>
+</div>

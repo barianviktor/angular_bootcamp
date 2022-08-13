@@ -1,0 +1,9 @@
+.beer_creater_field{
+    width: 100%;
+    max-width: 1000px;
+}
+mat-form-field{
+    width: 100%;
+    max-width: 400px;
+    display: block;
+}

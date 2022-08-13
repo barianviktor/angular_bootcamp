@@ -1,0 +1,36 @@
+<div class="modal-wrapper">
+    <div class="editor-form">
+        <h1>Edit Beer</h1>
+        <div class="beer_creater_field">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Beer name</mat-label>
+            <input matInput placeholder="Buzz" [(ngModel)]="beer.name" #beerNameInput />
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Beer Description</mat-label>
+            <textarea style="resize: none; height: 50px;" #beerDescInput  matInput placeholder="Tasty Beer" [(ngModel)]="beer.desc" >
+            </textarea>
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Image Url</mat-label>
+            <textarea style="resize: none; height: 50px;" #beerImgUrl matInput [(ngModel)]="beer.img_url" >
+            </textarea>
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Brewing tip</mat-label>
+            <textarea style="resize: none; height: 50px;" #beerTips matInput [(ngModel)]="beer.tips" >
+            </textarea>
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Was first brewed</mat-label>
+            <input matInput [(ngModel)]="beer.first_brewed" #beerFirstBrewed placeholder="09/2007" />
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>ABV</mat-label>
+            <input type="number" matInput [(ngModel)]="beer.abv" #beerAbv min="0" max="100" />
+          </mat-form-field>
+          <button (click)="editTheBeer()" mat-raised-button color="primary"	>Edit Beer</button>
+        </div>
+      </div>
+      <div (click)="closeBeerEditor()" class="modal-back"></div>
+</div>
